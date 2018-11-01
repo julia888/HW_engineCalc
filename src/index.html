@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>sort</title>
+
+    <script src="js/script.js"></script>
+    <script src="js/calc.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+    <div class="dispBlock">
+        <div class="memory" style="float: left">
+            <input type="button" value="Deg" style="color: grey" onclick="Deg()">
+            <input type="button" value="HYP" style="color: grey" onclick="squared()">
+            <input type="button" value="F-E" id="fe" style="color: grey" onclick="FEFunc()">
+            <br>
+            <input type="button" value="MC" id="mc" style="color: grey" onclick="MC()">
+            <input type="button" value="MR" id="mr" style="color: grey" onclick="MR()">
+            <input type="button" value="M+" id="mplus" style="color: grey" onclick="mPlus()">
+            <input type="button" value="M-" id="mminus" style="color: grey" onclick="mMinus()">
+            <input type="button" value="MS" id="ms" style="color: grey" onclick="MS()">
+
+
+        </div>
+        <input type="text" name="display" style="float: left" id="display" disabled>
+        <br>
+
+    </div>
+    <div style="clear: both">
+        <br>
+        <input type="button" value="x&sup2;" onclick="squared()">
+        <input type="button" value="x^y" onclick="document.getElementById('display').value += '^'">
+        <input type="button" value="sin" onclick="Sin()">
+        <input type="button" value="cos" onclick="Cos()">
+        <input type="button" value="tan" onclick="Tan()">
+        <input type="button" value="CE" onclick="cleanEntry()">
+        <input type="button" value="C" onclick="C()">
+        <input type="button" value="del" onclick="delChar(document.getElementById('display').value)">
+        <input type="button" value="/" id="/" onclick="document.getElementById('display').value += '/'">
+        <br>
+
+        <input type="button" value="x&sup3;" onclick="cubed()">
+        <input type="button" value="y&radic;x" onclick="document.getElementById('display').value += 'Sqrt'">
+        <input type="button" value="sin^-1" onclick="Sin_1()">
+        <input type="button" value="cos^-1" onclick="Cos_1()">
+        <input type="button" value="tan^-1" onclick="Tan_1()">
+        <input type="button" value="7" id="7" style="background-color: white" onclick="document.getElementById('display').value += '7'">
+        <input type="button" value="8" id="8" style="background-color: white"onclick="document.getElementById('display').value += '8'">
+        <input type="button" value="9" id="9" style="background-color: white" onclick="document.getElementById('display').value += '9'">
+        <input type="button" value="*" id="*" onclick="document.getElementById('display').value += '*'">
+        <br>
+
+        <input type="button" value="&radic;" onclick="sqrt()">
+        <input type="button" value="10x" onclick="document.getElementById('display').value += '10^'">
+        <input type="button" value="log" onclick="Log()">
+        <input type="button" value="exp" onclick="document.getElementById('display').value += 'Exp'">
+        <input type="button" value="Mod" onclick="document.getElementById('display').value += 'Mod'">
+        <input type="button" value="4" id="4" style="background-color: white" onclick="document.getElementById('display').value += '4'">
+        <input type="button" value="5" id="5" style="background-color: white" onclick="document.getElementById('display').value += '5'">
+        <input type="button" value="6" id="6" style="background-color: white" onclick="document.getElementById('display').value += '6'">
+        <input type="button" value="-" id="-" onclick="document.getElementById('display').value += '-'">
+        <br>
+
+        <input type="button" value="1/x" onclick="divisionX()">
+        <input type="button" value="e^x" onclick="document.getElementById('display').value += 'e^'">
+        <input type="button" value="ln" onclick="Ln()">
+        <input type="button" value="dms" onclick="DMS()">
+        <input type="button" value="deg" onclick="Deg()">
+        <input type="button" value="1" id="1" style="background-color: white" onclick="document.getElementById('display').value += '1'">
+        <input type="button" value="2" id="2" style="background-color: white" onclick="document.getElementById('display').value += '2'">
+        <input type="button" value="3" id="3" style="background-color: white" onclick="document.getElementById('display').value += '3'">
+        <input type="button" value="+" id="+" onclick="document.getElementById('display').value += '+'">
+        <br>
+
+        <input type="button" value="&#8593;" id="arrow" style="color: grey" onclick="arrow()">
+        <input type="button" value="&pi;" onclick="document.getElementById('display').value += Math.PI">
+        <input type="button" value="n!" onclick="fuct()">
+        <input type="button" value="(" onclick="document.getElementById('display').value += '('">
+        <input type="button" value=")" onclick="document.getElementById('display').value += ')'">
+        <input type="button" value="&#177;" onclick="changeSign()">
+        <input type="button" value="0" id="0" style="background-color: white" onclick="document.getElementById('display').value += '0'">
+        <input type="button" value="." onclick="document.getElementById('display').value += '.'">
+        <input type="button" value="=" onclick="show()">
+        <br>
+    </div>
+
+
+
+
+
+</body>
+</html>
